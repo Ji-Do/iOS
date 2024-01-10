@@ -9,13 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            Text("The First Tab")
+                .tabItem {
+                    Image(systemName: "tray")
+                    Text("Inbox")
+                }
+                .badge(10)  // TODO: list count 사용해서 동기
+            Text("Another Tab")
+                .tabItem {
+                    Image(systemName: "map")
+                    Text("Map")
+                }
+            Text("The Last Tab")
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("Profile")
+                }
         }
-        .padding()
     }
 }
 
