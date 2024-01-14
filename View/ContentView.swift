@@ -8,28 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    // MARK: - PROPERTIES
+    @State private var showingAddTodoView: Bool = false
+    
+    
+    // MARK: - BODY
     var body: some View {
+        // body는 하나의 view만 반환함
         TabView {
-            Text("The First Tab")
+            InboxView()
                 .tabItem {
                     Image(systemName: "tray")
                     Text("Inbox")
                 }
-                .badge(10)  // TODO: list count 사용해서 동기
-            Text("Another Tab")
+            MapView()
                 .tabItem {
                     Image(systemName: "map")
                     Text("Map")
                 }
-            Text("The Last Tab")
+            ProfileView()
                 .tabItem {
                     Image(systemName: "person")
-                    Text("Profile")
+                    Text("profile")
                 }
         }
-    }
-}
+    } //: BODY
+    
+} //: CONTENT VIEW
 
+// MARK: - PREVIEW
 #Preview {
     ContentView()
 }
