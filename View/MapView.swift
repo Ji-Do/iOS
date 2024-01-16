@@ -9,16 +9,28 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
-    @State private var region = MKCoordinateRegion(
-            center: CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194),
-            span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
-        )
+    // MARK: - PROPERTIES
+    @Namespace var mapScope
     
+    // MARK: - BODY
     var body: some View {
-        Map(coordinateRegion: $region)
+        Map() {
+            
+        }
+        .mapControls {
+            MapUserLocationButton()
+        }
+        
     }
 }
 
+// MARK: - EXTENSION
+extension CLLocationCoordinate2D {
+    static let weequahicPark = CLLocationCoordinate2D(latitude: 40.7063, longitude: -74.1973)
+    static let empireStateBuilding = CLLocationCoordinate2D(latitude: 40.7484, longitude: -73.9857)
+    static let columbiaUniversity = CLLocationCoordinate2D(latitude: 40.8075, longitude: -73.9626)
+}
+
 #Preview {
-    MapView().ignoresSafeArea(.all)
+    MapView()
 }
