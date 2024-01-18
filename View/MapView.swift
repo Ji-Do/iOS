@@ -24,13 +24,6 @@ struct MapView: View {
     }
 }
 
-// MARK: - EXTENSION
-extension CLLocationCoordinate2D {
-    static let weequahicPark = CLLocationCoordinate2D(latitude: 40.7063, longitude: -74.1973)
-    static let empireStateBuilding = CLLocationCoordinate2D(latitude: 40.7484, longitude: -73.9857)
-    static let columbiaUniversity = CLLocationCoordinate2D(latitude: 40.8075, longitude: -73.9626)
-}
-
 #Preview {
     MapView()
 }
