@@ -27,7 +27,6 @@ struct ContentView: View {
                     Text("Map")
                 }
                 .toolbarBackground(.visible, for: .tabBar)
-                .ignoresSafeArea()
             ProfileView()
                 .tabItem {
                     Image(systemName: "person")
