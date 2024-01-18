@@ -16,28 +16,10 @@ struct InboxView: View {
             VStack {
                 List {
                     Section {
-                        NavigationLink(destination: Text("List 1")) {
+                        NavigationLink(destination: TodoListView()) {
                             Label(
-                                title: { Text("List 1") },
-                                icon: { Image(systemName: "list.bullet") }
-                            )
-                        }
-                        NavigationLink(destination: Text("List 2")) {
-                            Label(
-                                title: { Text("List 2") },
-                                icon: { Image(systemName: "list.bullet") }
-                            )
-                        }
-                        NavigationLink(destination: Text("List 3")) {
-                            Label(
-                                title: { Text("List 3") },
-                                icon: { Image(systemName: "list.bullet") }
-                            )
-                        }
-                        NavigationLink(destination: Text("List 4")) {
-                            Label(
-                                title: { Text("List 4") },
-                                icon: { Image(systemName: "list.bullet") }
+                                title: { Text("관리함") },
+                                icon: { Image(systemName: "tray.fill") }
                             )
                         }
                     } header: {

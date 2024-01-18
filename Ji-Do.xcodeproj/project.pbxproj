@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050A558F2B595357008EAECF /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050A558E2B595357008EAECF /* TodoListView.swift */; };
 		0510FDAF2B4EC3D100E37B1F /* Ji_DoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0510FDAE2B4EC3D100E37B1F /* Ji_DoApp.swift */; };
 		0510FDB12B4EC3D100E37B1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0510FDB02B4EC3D100E37B1F /* ContentView.swift */; };
 		0510FDB32B4EC3D300E37B1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0510FDB22B4EC3D300E37B1F /* Assets.xcassets */; };
@@ -14,7 +15,6 @@
 		0510FDC02B4EC3D300E37B1F /* Ji_DoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0510FDBF2B4EC3D300E37B1F /* Ji_DoTests.swift */; };
 		0510FDCA2B4EC3D300E37B1F /* Ji_DoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0510FDC92B4EC3D300E37B1F /* Ji_DoUITests.swift */; };
 		0510FDCC2B4EC3D300E37B1F /* Ji_DoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0510FDCB2B4EC3D300E37B1F /* Ji_DoUITestsLaunchTests.swift */; };
-		05F0962D2B53A25D00B81B88 /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F0962C2B53A25D00B81B88 /* AddTodoView.swift */; };
 		05F0962F2B53A98100B81B88 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F0962E2B53A98100B81B88 /* InboxView.swift */; };
 		05F096312B53A98700B81B88 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F096302B53A98700B81B88 /* MapView.swift */; };
 		05F096332B53A99700B81B88 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F096322B53A99700B81B88 /* ProfileView.swift */; };
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		050A558E2B595357008EAECF /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 		0510FDAB2B4EC3D100E37B1F /* Ji-Do.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ji-Do.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0510FDAE2B4EC3D100E37B1F /* Ji_DoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ji_DoApp.swift; sourceTree = "<group>"; };
 		0510FDB02B4EC3D100E37B1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,7 +49,6 @@
 		0510FDC52B4EC3D300E37B1F /* Ji-DoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ji-DoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0510FDC92B4EC3D300E37B1F /* Ji_DoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ji_DoUITests.swift; sourceTree = "<group>"; };
 		0510FDCB2B4EC3D300E37B1F /* Ji_DoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ji_DoUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		05F0962C2B53A25D00B81B88 /* AddTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoView.swift; sourceTree = "<group>"; };
 		05F0962E2B53A98100B81B88 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 		05F096302B53A98700B81B88 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		05F096322B53A99700B81B88 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -139,10 +139,10 @@
 			isa = PBXGroup;
 			children = (
 				0510FDB02B4EC3D100E37B1F /* ContentView.swift */,
-				05F0962C2B53A25D00B81B88 /* AddTodoView.swift */,
 				05F0962E2B53A98100B81B88 /* InboxView.swift */,
 				05F096302B53A98700B81B88 /* MapView.swift */,
 				05F096322B53A99700B81B88 /* ProfileView.swift */,
+				050A558E2B595357008EAECF /* TodoListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,8 +281,8 @@
 				05F0962F2B53A98100B81B88 /* InboxView.swift in Sources */,
 				05F096312B53A98700B81B88 /* MapView.swift in Sources */,
 				0510FDAF2B4EC3D100E37B1F /* Ji_DoApp.swift in Sources */,
+				050A558F2B595357008EAECF /* TodoListView.swift in Sources */,
 				05F096332B53A99700B81B88 /* ProfileView.swift in Sources */,
-				05F0962D2B53A25D00B81B88 /* AddTodoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
